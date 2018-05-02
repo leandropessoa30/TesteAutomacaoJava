@@ -4,15 +4,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ClientePage extends ClienteElementMap{
 
-	public void efetuarLogin() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void acessarMenuClientesIserir() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	public void informarDadosIdentificacaoPF() {
 		// TODO Auto-generated method stub
