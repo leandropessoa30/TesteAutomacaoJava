@@ -2,8 +2,7 @@ package foradacaixa;
 
 import org.openqa.selenium.support.ui.Select;
 
-public class ClientePage extends ClienteElementMap{
-
+public class ClientePage extends ClienteElementMap {
 
 	public void informarDadosIdentificacaoPF() {
 		// TODO Auto-generated method stub
@@ -12,10 +11,10 @@ public class ClientePage extends ClienteElementMap{
 		nome_razaosocial.sendKeys("Automação Fora da Caixa");
 		email.sendKeys("automacao@foradacaixa.com.br");
 		data_nascimento.sendKeys("02/01/1990");
-		
+
 		Select cmbSexo = new Select(sexo);
 		cmbSexo.selectByVisibleText("Masculino");
-		
+
 		Select cmbEstadoCivil = new Select(estado_civil);
 		cmbEstadoCivil.selectByVisibleText("Solteiro");
 	}
@@ -26,7 +25,7 @@ public class ClientePage extends ClienteElementMap{
 	}
 
 	public void informarEnderecos() {
-		//Endereco Principal
+		// Endereco Principal
 		endp_cep.sendKeys("99130-529");
 		endp_endereco.sendKeys("Rua da Automação");
 		endp_numero.sendKeys("123");
@@ -36,8 +35,8 @@ public class ClientePage extends ClienteElementMap{
 		cmbEstadoEndPrincipal.selectByVisibleText("SP");
 		endp_telefone.sendKeys("51 3366-9999");
 		endp_celular.sendKeys("54 99256-3594");
-		
-		//Endereco de Cobranca
+
+		// Endereco de Cobranca
 		endc_cep.sendKeys("99134-569");
 		endc_endereco.sendKeys("Rua Fora da Caixa");
 		endc_numero.sendKeys("111");
@@ -47,24 +46,17 @@ public class ClientePage extends ClienteElementMap{
 		cmbEstadoEndCobranca.selectByVisibleText("SP");
 		endc_telefone.sendKeys("51 3366-9854");
 		endc_celular.sendKeys("54 99658-3974");
-		
+
 	}
 
 	public void verificarMensagemSucesso() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void efetuarLogout() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-
-
-	
-
-
-	
 }
-
