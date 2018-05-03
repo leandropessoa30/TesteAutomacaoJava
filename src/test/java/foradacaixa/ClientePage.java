@@ -1,9 +1,14 @@
 package foradacaixa;
 
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class ClientePage extends ClienteElementMap {
-
+	
+	public ClientePage() {
+		PageFactory.initElements(TestRule.getDriver(), this);
+	}
+	
 	public void informarDadosIdentificacaoPF() {
 		// TODO Auto-generated method stub
 		fisica.click();
