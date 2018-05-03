@@ -15,8 +15,9 @@ public class TestRule {
 
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 		// Para que possa acessar a base de dados corretamente.
+		String userLogado = System.getProperty("user.name");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("user-data-dir=C:/Users/leandro.psantos/AppData/Local/Google/Chrome/User Data");
+		options.addArguments("user-data-dir=C:/Users/" + userLogado + "/AppData/Local/Google/Chrome/User Data");
 		options.addArguments("--start-maximized");
 		// Inicia o driver do Chrome e navega até a página inicial.
 		driver = new ChromeDriver(options);
