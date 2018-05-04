@@ -14,7 +14,7 @@ public class ClienteSteps {
 	}
 
 	@And("acessei o menu Clientes >> Inserir")
-	public void acessarMenuClientesIserir() {
+	public void acessarMenuClientesIserir() throws Exception {
 		MenusPage menusPage = new MenusPage();
 		menusPage.acessarMenuClientesInserir();
 	}
@@ -40,7 +40,7 @@ public class ClienteSteps {
 	@And("na tela Enderecos clico em Salvar")
 	public void clicarSalvar() {
 		ClientePage clientePage = new ClientePage();
-		clientePage.clicarAvancar();
+		clientePage.clicarSalvar();
 	}
 
 	@Then("na tela Enderecos sera exibida mensagem de sucesso")

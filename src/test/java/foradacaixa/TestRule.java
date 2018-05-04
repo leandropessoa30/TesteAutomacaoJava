@@ -1,5 +1,7 @@
 package foradacaixa;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,6 +23,7 @@ public class TestRule {
 		options.addArguments("--start-maximized");
 		// Inicia o driver do Chrome e navega até a página inicial.
 		driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//driver.manage().window().maximize();
 		driver.navigate().to("file:///C:/Vers%C3%A3o%202/index.html");
 	}

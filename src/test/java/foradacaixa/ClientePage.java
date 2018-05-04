@@ -10,7 +10,6 @@ public class ClientePage extends ClienteElementMap {
 	}
 	
 	public void informarDadosIdentificacaoPF() {
-		// TODO Auto-generated method stub
 		fisica.click();
 		cpf_cnpj.sendKeys("837.623.723-30");
 		nome_razaosocial.sendKeys("Automação Fora da Caixa");
@@ -25,7 +24,6 @@ public class ClientePage extends ClienteElementMap {
 	}
 
 	public void clicarAvancar() {
-		// TODO Auto-generated method stub
 		avancar.click();
 	}
 
@@ -62,6 +60,11 @@ public class ClientePage extends ClienteElementMap {
 	public void efetuarLogout() {
 		// TODO Auto-generated method stub
 
+	}
+
+	public void clicarSalvar() {
+		salvar.click();
+		
 	}
 
 }
